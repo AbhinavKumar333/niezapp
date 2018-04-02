@@ -7,7 +7,10 @@
 
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body>
+
+<!-- Navbar starts-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -42,19 +45,39 @@
     </form>
   </div>
 </nav>
-
+<!-- Navbar Ends -->
 </br></br></br>
+
+
 <div class="container">
 <div class="list-group">
+
+  <a class="list-group-item list-group-item-action flex-column align-items-start">
+    <p class="mb-1">
+      <form>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Write Something to Post</label>
+          <input type="text" class="form-control" id="postInput">
+        </div>
+        <input type="submit" class="btn btn-primary mb-2" value="Image">
+        <input type="submit" class="btn btn-primary mb-2" value="Video">
+        <input type="submit" class="btn btn-primary mb-2" value="OK" onclick="getData();">
+      </form>
+    </p>
+  </a>
+</br></br>
+
   <% for i in 0..3 %>
   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
     <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
+      <h5 class="mb-1">Post Heading</h5>
       <small class="text-muted">3 days ago</small>
     </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
+    <p class="mb-1">A social media platform has been launched exclusively for The National Institute of Engineering</p>
+    <small class="text-muted">By Akshari,Abhinav,Abhinav Kumar</small>
   </a>
   <% end %>
 </div>
 </div>
+
+</body>
